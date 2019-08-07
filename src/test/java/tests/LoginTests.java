@@ -23,7 +23,7 @@ public class LoginTests {
 
     }
 
-    @Test
+    @Test(priority = 1)
     public void loginTest1() throws Exception{
      driver.get("http://practice.cybertekschool.com");
      Thread.sleep(1000);
@@ -31,6 +31,13 @@ public class LoginTests {
      Thread.sleep(1000);
      driver.findElement(By.cssSelector("[type='checkbox']:nth-of-type(1)")).click();
      Thread.sleep(1000);
+    }
+
+    @Test(priority = 2)
+    public void loginTest2 () throws Exception{
+        driver.get("http://qa2.vytrack.com/user/login");
+        Thread.sleep(2000);
+
     }
 
     @AfterTest
