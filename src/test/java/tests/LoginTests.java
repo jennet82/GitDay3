@@ -30,7 +30,7 @@ public class LoginTests {
      driver.findElement(By.cssSelector("a[href='/checkboxes']")).click();
      Thread.sleep(1000);
      driver.findElement(By.cssSelector("[type='checkbox']:nth-of-type(1)")).click();
-     Thread.sleep(1000);
+     
     }
 
     @Test(priority = 2)
