@@ -39,6 +39,11 @@ public class LoginTests {
         Thread.sleep(2000);
 
     }
+    @Test(priority = 3)
+    public void negativeloginTest () throws Exception {
+        driver.get("http://qa2.vytrack.com/user/login");
+        Thread.sleep(2000);
+    }
 
     @AfterTest
     public void teardown(){
